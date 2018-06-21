@@ -41,12 +41,22 @@
 				padding-left: 10px;
 			}
 		
-			.btn {
+			#add {
 				position: absolute;
 				background-color: #3D3B3C;
 				color: white;
 				bottom: 10%;
 				left: 100%;
+				margin-left: -104.5px; /*104.5px is half of the button's width*/
+			}
+			
+			#chat{
+				position: absolute;
+			
+				background-color: #3D3B3C;
+				color: white;
+				bottom: 10%;
+				right: 70%;
 				margin-left: -104.5px; /*104.5px is half of the button's width*/
 			}
 			
@@ -65,6 +75,10 @@
 			
 			.navbar-nav{
 				padding-right: 100px;
+			}
+			
+			.navbar{
+				padding-top: 20px;
 			}
 			
 			
@@ -123,7 +137,7 @@
 				<nav class="navbar navbar-expand-lg fixed-top" style="">
 				  <h3 class="navbar-brand" href="#">GEARHEADS</h3>
 				  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" style = "background-color: #ECDDC4" >
-					<span class="navbar-toggler-icon"></span>
+					<img src = "img/menu.png" style = "width: 20px"></img>
 				  </button>
 				  <div class="collapse navbar-collapse" id="navbarNav">
 					<ul class="navbar-nav">
@@ -139,6 +153,7 @@
 					  
 					</ul>
 				  </div>
+				  
 				</nav>
                 
 
@@ -179,7 +194,8 @@
 					});
 					</script>
 
-				<button type="button" class="btn btn-circle"><img src="img/add.png" style="width: 50px;"></img></button>
+				<button id="add" type="button" class="btn btn-circle"><img src="img/add.png" style="width: 50px;"></img></button>
+				<button id="chat" type="button" class="btn btn-circle"><img src="img/chat.png" style="width: 50px;"></img></button>
                
             </div>
         </div>
