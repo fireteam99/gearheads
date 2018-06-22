@@ -1,0 +1,90 @@
+@font-face {
+<<<<<<< HEAD
+	font-family: Futura;
+	src: url(fonts/Futura-Normal.woff);
+=======
+	font-family: futura;
+	src: url(/fonts/Futura-Normal.woff);
+>>>>>>> 4c556b2899ae8366011322b50bce2791949db2f2
+}
+
+
+.navbar{
+	background-color: #212529; 
+	}
+body {
+   font-family: futura;
+   background-color: #ECDDC4;
+}
+h3.navbar-brand, a.nav-link{
+	color: #C8C5BC;
+	transition: all 0.5s ease;
+}
+h3.navbar-brand, a.nav-link:hover {
+	color: #ECDDC4;
+}
+
+h3.navbar-brand{
+	font-family: Futura-Medium;
+	font-size: 31px;
+	color: #C1BDB4;
+	letter-spacing: 0px;
+	padding-left: 10px;
+	padding-right: 10px;
+	transition: all 0.3s ease;
+	letter-spacing: 10px;
+	font-weight: 0;
+}
+
+#add {
+	position: absolute;
+	background-color: #3D3B3C;
+	color: white;
+	bottom: 10%;
+	left: 100%;
+	margin-left: -104.5px; /*104.5px is half of the button's width*/
+}
+
+#chat{
+	position: absolute;
+
+	background-color: #3D3B3C;
+	color: white;
+	bottom: 10%;
+	right: 70%;
+	margin-left: -104.5px; /*104.5px is half of the button's width*/
+}
+
+.btn-circle {
+  width: 70px;
+  height: 70px;
+  padding: 3px 13px;
+  font-size: 50px;
+  line-height: 1.33;
+  border-radius: 35px;
+}
+
+.btn:hover{
+	background-color: #bcb09c;
+}
+
+.navbar-nav{
+	padding-right: 0px;
+	font-family: Futura-CondensedMedium;
+	font-size: 29px;
+	letter-spacing: 0px;
+}
+
+.navbar{
+	padding-top: 20px;
+}
+
+#navbarSignIn {
+	font-size: 20px;
+}
+#add {
+	font-family: Futura;
+	color: #bcb09c;
+	font-size: 35px;
+	font-weight: 100; 
+}
