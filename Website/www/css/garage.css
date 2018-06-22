@@ -4,11 +4,11 @@ body {
   padding: 0;
   margin: 0;
 }
-body {
-  background: #fff;
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-}
+
+
+
 .js-transitions-disabled * {
+  -webkit-transition: none !important;
   transition: none !important;
 }
 .carousel {
@@ -76,7 +76,7 @@ body {
 }
 .spinner {
   position: absolute;
-  width: calc(50vw - (20px));
+  width: calc(50vw - (28.4px));
   height: calc(100vh - 40px);
   top: 0;
   left: 0;
@@ -85,6 +85,7 @@ body {
   margin: auto;
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
+  -webkit-transition: -webkit-transform 1s;
   transition: -webkit-transform 1s;
   transition: transform 1s;
   transition: transform 1s, -webkit-transform 1s;
@@ -160,14 +161,18 @@ body {
   top: 0;
   width: 50%;
   height: 100%;
+  
+  
 }
 .content__right {
   right: 0;
   left: auto;
+  
 }
 .content__left {
   background-repeat: no-repeat;
   background-size: cover;
+  z-index: 1;
 }
 .content__left:after {
   position: absolute;
@@ -189,23 +194,31 @@ body {
   color: #fff;
   width: 100%;
   letter-spacing: 0.15em;
-  line-height: 0.6;
+  line-height: 1;
 }
 .content__left span {
-  font-size: 1vw;
-  font-weight: 300;
-  letter-spacing: 0.2em;
-  opacity: 0.9;
-  font-family: Merriweather;
+  
 }
 .content__right {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
+
+@font-face {
+				font-family: futura;
+				src: url(fonts/Futura-Normal.woff);
+			}
+
 .content__right .content__main {
   position: absolute;
-  font-family: Merriweather, serif;
+  font-family: futura;
   text-align: left;
   color: #fff;
   font-size: 1.3vw;
