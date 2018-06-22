@@ -1,12 +1,7 @@
 @font-face {
 <<<<<<< HEAD
-<<<<<<< HEAD
 	font-family: Futura;
 	src: url(fonts/Futura-Normal.woff);
-=======
-	font-family: futura;
-	src: url(/fonts/Futura-Normal.woff);
->>>>>>> 4c556b2899ae8366011322b50bce2791949db2f2
 =======
 	font-family: futura;
 	src: url(/fonts/Futura-Normal.woff);
@@ -15,11 +10,7 @@
 
 
 .navbar{
-<<<<<<< HEAD
 	background-color: #212529; 
-=======
-	background-color: #5F5B6A; 
->>>>>>> 4c556b2899ae8366011322b50bce2791949db2f2
 	}
 body {
    font-family: futura;
@@ -30,11 +21,7 @@ h3.navbar-brand, a.nav-link{
 	transition: all 0.5s ease;
 }
 h3.navbar-brand, a.nav-link:hover {
-<<<<<<< HEAD
 	color: #ECDDC4;
-=======
-	color: #323031;
->>>>>>> 4c556b2899ae8366011322b50bce2791949db2f2
 }
 
 h3.navbar-brand{
@@ -45,11 +32,8 @@ h3.navbar-brand{
 	padding-left: 10px;
 	padding-right: 10px;
 	transition: all 0.3s ease;
-<<<<<<< HEAD
 	letter-spacing: 10px;
 	font-weight: 0;
-=======
->>>>>>> 4c556b2899ae8366011322b50bce2791949db2f2
 }
 
 #add {
@@ -81,11 +65,7 @@ h3.navbar-brand{
 }
 
 .btn:hover{
-<<<<<<< HEAD
 	background-color: #bcb09c;
-=======
-	background-color: #bcb09c
->>>>>>> 4c556b2899ae8366011322b50bce2791949db2f2
 }
 
 .navbar-nav{
@@ -104,14 +84,7 @@ h3.navbar-brand{
 }
 #add {
 	font-family: Futura;
-<<<<<<< HEAD
 	color: #bcb09c;
 	font-size: 35px;
 	font-weight: 100; 
 }
-=======
-	color: #ECDDC4;
-	font-size: 35px;
-	font-weight: 100; 
-}
->>>>>>> 4c556b2899ae8366011322b50bce2791949db2f2
