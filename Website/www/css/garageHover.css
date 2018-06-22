@@ -30,6 +30,8 @@
   transform: translate3d(-10px,0,0);
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
+  height: 100%;
+  width: auto
 }
 
 .hovereffect:hover img {
@@ -38,6 +40,9 @@
   -webkit-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
 }
+
+
+
 
 .hovereffect h2 {
   text-transform: uppercase;
