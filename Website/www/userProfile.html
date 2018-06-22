@@ -14,6 +14,7 @@
 
 	<link rel="stylesheet" href="css/garage.css">	
     <link rel="stylesheet" href="css/userPage.css">
+	<link rel="stylesheet" href="css/buttons.css">
   
 </head>
 
@@ -48,6 +49,7 @@
 		<hr>
 		<img class="icon" src="img/user/garage.png"></img>
 		<h3 id="title">USERNAME'S GARAGE</h3>
+		<btn class="btn-0" onclick="myFunction()"><p id="demo">0</p></btn>
 	</div>
 	
     <div class="carousel">
@@ -62,9 +64,9 @@
 						</div>
 						<div class="content__right container" >
 							<div class="content__main">
-								<img src="img/garage/manual.png" style="width: 70px; padding-right: 10px;">MANUAL<br><br>
-								<img src="img/garage/trim.png" style="width: 70px; padding-right: 10px;">SPIRIT R<br><br>
-								<img src="img/garage/engine.png" style="width: 70px; padding-right: 10px;">240 BHP 13B ROTARY<br><br>
+								<p><img class="garageIcon responsive" src="img/garage/manual.png">MANUAL</p>
+								<p><img class="garageIcon responsive" src="img/garage/trim.png">SPIRIT R</p>
+								<p><img class="garageIcon responsive" src="img/garage/engine.png">240 BHP 13B ROTARY</p>
 								<p>Lorem ipsum dolor sit amet, cu nibh nullam elaboraret cum. An pri alienum evertitur. Cu justo facilis cotidieque vix, ut per laoreet interesset. Ex cum sint possit pertinax. Amet equidem ocurreret te ius. Amet brute ad nec, quando dolorum corrumpit eu mea. Et eam persius impedit, ea vivendo menandri liberavisse eum. </p>
 							</div>
 							<h3 class="content__index"><img style = "position: absolute; width: 50%; right: 10%;" src="img/logos/mazda.png"></h3>
@@ -132,6 +134,15 @@
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
 
     <script src="js/index.js"></script>
+<script>
+var add = (function () {
+    var counter = 0;
+    return function () {return counter += 1;}
+})();
 
+function myFunction(){
+    document.getElementById("demo").innerHTML = add();
+}
+</script>
 </body>
 </html>

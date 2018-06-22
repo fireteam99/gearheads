@@ -228,10 +228,19 @@ body {
   margin: 0;
   opacity: 0.8;
 }
-.content__right .content__main p:last-child {
+
+.content__right .content__main p {
+  font-family: futura;
   text-transform: uppercase;
   letter-spacing: 0.15em;
-  font-size: 0.85em;
+  font-size:calc(8px + 1vw);
+}
+
+.content__right .content__main p:last-child {
+  font-family: futura;
+  text-transform: none;
+  letter-spacing: 0.15em;
+  font-size:calc(5px + 1vw);
 }
 .content__right .content__index {
   font-size: 30vh;
@@ -243,3 +252,8 @@ body {
   color: #fff;
 }
 
+.garageIcon{
+	width: 100px;
+	padding-right: 10px;
+	max-width: 50px;
+}
