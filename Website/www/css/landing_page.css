@@ -1,0 +1,78 @@
+@font-face {
+	font-family: futura;
+	src: url(fonts/Futura-Normal.woff);
+}
+
+
+.navbar{
+	background-color: #5F5B6A; 
+	}
+body {
+   font-family: futura;
+   background-color: #ECDDC4;
+}
+h3.navbar-brand, a.nav-link{
+	color: #C8C5BC;
+}
+
+h3.navbar-brand{
+	font-family: Futura-Medium;
+	font-size: 31px;
+	color: #C1BDB4;
+	letter-spacing: 0px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+#add {
+	position: absolute;
+	background-color: #3D3B3C;
+	color: white;
+	bottom: 10%;
+	left: 100%;
+	margin-left: -104.5px; /*104.5px is half of the button's width*/
+}
+
+#chat{
+	position: absolute;
+
+	background-color: #3D3B3C;
+	color: white;
+	bottom: 10%;
+	right: 70%;
+	margin-left: -104.5px; /*104.5px is half of the button's width*/
+}
+
+.btn-circle {
+  width: 70px;
+  height: 70px;
+  padding: 3px 13px;
+  font-size: 50px;
+  line-height: 1.33;
+  border-radius: 35px;
+}
+
+.btn:hover{
+	background-color: #bcb09c
+}
+
+.navbar-nav{
+	padding-right: 0px;
+	font-family: Futura-CondensedMedium;
+	font-size: 29px;
+	letter-spacing: 0px;
+}
+
+.navbar{
+	padding-top: 20px;
+}
+
+#navbarSignIn {
+	font-size: 20px;
+}
+#add {
+	font-family: Futura;
+	color: #ECDDC4;
+	font-size: 35px;
+	font-weight: 100; 
+}
