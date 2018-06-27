@@ -12,11 +12,14 @@
         <script src='https://api.mapbox.com/mapbox-gl-js/v0.44.2/mapbox-gl.js'></script>
         <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet">
         <!--<link rel="stylesheet" href="css/chat.css"> -->
-        <!-- Our Custom CSS -->
         <!--<link rel="stylesheet" href="css/style3.css">-->
         <!-- Scrollbar Custom CSS -->
         <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css"> --> 
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+        <!--animatedModal resources-->
+        <link rel="stylesheet" href="/objecttest/directory/font-awesome-4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.0/animate.min.css"/>
+        <!-- Our Custom CSS -->
         <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.0/animate.min.css">
         <link rel="stylesheet" type="text/css" href="css/landing_page.css">      
     </head>
@@ -42,11 +45,26 @@
                             </li>
                         </ul>
                         <ul class="navbar-nav ml-auto" style="font-size: 20px;">
+                            <!--Sign Up and Login lead to the modal-->
                             <li><a class="nav-link" href="#"><i class="fas fa-sign-in-alt"></i> Sign Up</a></li>
-                            <li><a class="nav-link" href="#"><i class="fas fa-user"></i> Login</a></li>
+                            <li><a class="nav-link" id="login-modal" href="#animatedModal"><i class="fas fa-user"></i> Login</a></li>
                         </ul>
                     </div>
                 </nav>
+                <!--login-modal-->
+                <div id="animatedModal">
+                    <!--THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID  class="close-animatedModal" -->
+                    <div class="close-animatedModal"> 
+                        CLOSE MODAL
+                    </div>
+
+                    <div class="modal-content">
+                        <!--Your modal content goes here-->
+                        <p>This is a test paragraph.</p>
+                    </div>
+                </div>
+                <!--end login-modal-->
+                
                 <div id='map' style='width: 100%; height: 100%; position: absolute; padding-top: 0px'></div>
                 <script>
                     mapboxgl.accessToken = 'pk.eyJ1IjoiZ2VhcmhlYWRzIiwiYSI6ImNqaW5lNmN0YzBlM2czcXA4bmR6MHRydTQifQ.gkZjlYqcXNCfqr8gxouWyA';
@@ -55,7 +73,6 @@
                         style: 'mapbox://styles/gearheads/cjine7avp14ds2sqwyxutcl6d'
                     });
                 </script>
-
                 <button id="add" type="button" class="btn btn-circle"><i class="fa fa-plus" aria-hidden="true"></i></button>
             </div>
         </div>
@@ -75,6 +92,8 @@
                 </div>
             </div>
         </footer>
+
+
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
@@ -82,8 +101,11 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
         <script src="yourPath/animatedModal.min.js"></script>
+        <!--animatedModal stuff-->
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="animatedModal.js-master/animatedModal.min.js"></script>
         <script>
-            $("#demo01").animatedModal();
+            $("#login-modal").animatedModal();
         </script>
     </body>
 </html>
