@@ -1,5 +1,4 @@
-<<<<<<< HEAD
-=======
+
 @font-face {
 	font-family: Futura;
 	src: url(fonts/Futura-Normal.woff);
@@ -33,7 +32,7 @@ h3.navbar-brand{
 	font-weight: 0;
 }
 
->>>>>>> 8b1d0272989711c5daee49ddd3f03a36734eab09
+
 #add {
 	position: absolute;
 	background-color: #3D3B3C;
@@ -62,9 +61,7 @@ h3.navbar-brand{
   border-radius: 35px;
 }
 
-<<<<<<< HEAD
 
-=======
 .btn:hover{
 	background-color: #bcb09c;
 }
@@ -84,7 +81,7 @@ h3.navbar-brand{
 #navbarSignIn {
 	font-size: 20px;
 }
->>>>>>> 8b1d0272989711c5daee49ddd3f03a36734eab09
+
 #add {
 	font-family: Futura;
 	color: #bcb09c;
