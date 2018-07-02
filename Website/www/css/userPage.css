@@ -1,34 +1,10 @@
 @font-face {
 	font-family: futura;
-	src: url(../fonts/Futura-Normal.woff);
+	src: url(/fonts/Futura-Normal.woff);
 }
 
 			
-.navbar{
-	background-color: #3D3B3C; 
-	}
-body {
-   font-family: futura;
-   background-color: #ECDDC4;
-}
-h3.navbar-brand, a.nav-link{
-	color: #ECDDC4;
-}
 
-h3.navbar-brand{
-	letter-spacing: 10px;
-	font-size: 30px;
-	padding-left: 10px;
-}
-
-
-.navbar-nav{
-	padding-right: 100px;
-}
-
-.navbar{
-	padding-top: 10px;
-}
 
 .user{
 	display: block;
