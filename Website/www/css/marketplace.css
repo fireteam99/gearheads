@@ -53,11 +53,11 @@ h2 {
     text-align: center;
 }
 
-.trades_container {
+.trade-container {
     display: flex;
     align-items: center;
 }
 
-.trades_container > div {
+.trade-container > div {
     flex: 1;
 }
